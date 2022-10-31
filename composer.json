@@ -20,7 +20,7 @@
         "orchestra/testbench": "~5.0|~6.0|~7.0"
     },
     "extra": {
-        "vel": {
+        "laravel": {
             "providers": [
                 "TwilioPackage\\Twilio\\TwilioServiceProvider"
             ],
