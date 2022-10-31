@@ -1,0 +1,32 @@
+{
+    "name": "syaifulamir/twilio",
+    "description": "A vel Package for sending SMS messages with Twilio",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Syaiful Amir",
+            "email": "syaiful.amir69@gmail.com"
+        }
+    ],
+    "require": {
+        "twilio/sdk": "^6.43"
+    },
+    "autoload": {
+        "psr-4": {
+            "TwilioPackage\\Twilio\\":"src/"
+        }
+    },
+    "require-dev": {
+        "orchestra/testbench": "~5.0|~6.0|~7.0"
+    },
+    "extra": {
+        "vel": {
+            "providers": [
+                "TwilioPackage\\Twilio\\TwilioServiceProvider"
+            ],
+            "aliases": {
+                "Twilio": "TwilioPackage\\Twilio\\Facades\\Twilio"
+            }
+        }
+    }
+}
